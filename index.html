@@ -1,0 +1,29 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>徐州市社会保险单位参保人员缴费证明</title>
+<meta charset="utf-8" />
+<script>
+  
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+
+var id =getQueryVariable("id") 
+var urll = "img/"+id+".jpg"
+
+</script>
+</head>
+<body>
+
+	<img id="image" src="urll">
+</body>
+</html>
